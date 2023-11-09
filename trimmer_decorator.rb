@@ -9,7 +9,7 @@ class TrimmerDecorator < Decorator
   end
 end
 
-
+# checking values
 person = Person.new(14, 'rex')
 p person.correct_name
 
