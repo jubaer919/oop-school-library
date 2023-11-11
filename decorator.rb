@@ -1,9 +1,9 @@
 require './nameable'
 
 class Decorator < Nameable
-  def initialize(nameable)
+  def initialize(n)
     super()
-    @nameable = nameable
+    @nameable = n
   end
 
   def correct_name
