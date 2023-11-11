@@ -1,7 +1,8 @@
 require './nameable'
+
 class Person < Nameable
-  attr_reader :id
   attr_accessor :name, :age, :rentals
+  attr_reader :id
 
   def initialize(age, name = 'Unknown', parent_permission: true)
     super()
@@ -27,6 +28,6 @@ class Person < Nameable
   private
 
   def of_age?
-    @age >= 18
+    true if @age >= 18
   end
 end
